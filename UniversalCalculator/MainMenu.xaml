@@ -18,7 +18,7 @@
 				<Button x:Name="mathsCalculatorButton" FontSize="20" HorizontalAlignment="Center" Width="300" Height="42">
 					Maths Calculator
 				</Button>
-				<Button x:Name="morgageCalculatorButton" FontSize="20" HorizontalAlignment="Center" Width="300" Height="42">
+				<Button x:Name="morgageCalculatorButton" FontSize="20" HorizontalAlignment="Center" Width="300" Height="42" Click="morgageCalculatorButton_Click">
 					Morgage Calculator
 				</Button>
 				<Button x:Name="currencyConverterButton" FontSize="20" HorizontalAlignment="Center" Width="300" Height="42">
