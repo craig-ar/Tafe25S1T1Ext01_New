@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="Calculator.CurrencyConvertor"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background ="#f6e0ba">
+
+	<Grid Margin="0,9,0,-9">
+		<TextBlock TextWrapping="Wrap" Text="calculator" Margin="36,18,1365,906"/>
+		<TextBlock x:Name="Title_TextBlock" TextWrapping="Wrap" Text="Currency Conversion Calculator" Margin="0,67,0,857" FontWeight="Bold" FontSize="65" HorizontalAlignment="Center"/>
+
+		<TextBlock x:Name="Amount_TextBlock" TextWrapping="Wrap" Text="Amount $" Margin="84,200,0,724" FontSize="60" HorizontalAlignment="Left"/>
+		<TextBox x:Name="Amount_TextBox" HorizontalAlignment="Left" Height="80" Margin="69,311,0,0" FontSize="45" TextWrapping="Wrap" VerticalAlignment="Top" Width="379"/>
+
+		<TextBlock x:Name="To_TextBlock" TextWrapping="Wrap" Text="From" Margin="553,200,0,724" FontSize="60" HorizontalAlignment="Left"/>
+		<ComboBox x:Name="ToComboBox"  Width="400" Height="80" FontSize="45" Margin="933,311,0,0">
+			<ComboBoxItem Content="USD - US Dollar" Tag="USD"/>
+			<ComboBoxItem Content="EUR - Euro" Tag="EUR"/>
+			<ComboBoxItem Content="GBP - British Pound" Tag="GBP"/>
+			<ComboBoxItem Content="INR - Indian Rupee" Tag="INR"/>
+		</ComboBox>
+
+		<TextBlock x:Name="From_TextBlock" TextWrapping="Wrap" Text="To" Margin="978,200,0,724" FontSize="60" HorizontalAlignment="Left"/>
+		<ComboBox x:Name="FromComboBox"  Width="400" Height="80" FontSize="45" Margin="499,311,0,0">
+			<ComboBoxItem Content="USD - US Dollar" Tag="USD"/>
+			<ComboBoxItem Content="EUR - Euro" Tag="EUR"/>
+			<ComboBoxItem Content="GBP - British Pound" Tag="GBP"/>
+			<ComboBoxItem Content="INR - Indian Rupee" Tag="INR"/>
+		</ComboBox>
+
+		<!-- Conversion Result -->
+		<TextBlock x:Name="AmountCurrencyTextBlock" FontSize="28" Margin="69,426,1047,505" />
+
+		<!-- Exchange Rate Info -->
+		<TextBlock x:Name="ConversionTextBlock" FontSize="35" Margin="69,500,1072,437" />
+
+		<!-- Result TextBlock -->
+		<TextBlock x:Name="FromToTextBlock" FontSize="28" Margin="69,679,1072,258"/>
+
+		<!-- Result TextBlock -->
+		<TextBlock x:Name="ToFromTextBlock" FontSize="28" Margin="69,598,1072,339"/>
+
+		<!-- Buttons -->
+		<Button x:Name="ConversionButton" Content="Currency conversion" Width="400" Height="80" HorizontalAlignment="Center" Margin="0,763,0,0" Click="CurrencyConversionButton_Click" VerticalAlignment="Top" FontSize="40" FontWeight="Bold"/>
+		<Button x:Name="ExitButton" Content="Exit" Width="100" Height="79" HorizontalAlignment="Center" Margin="0,884,0,0"  VerticalAlignment="Top" FontWeight="Bold" FontSize="40" RenderTransformOrigin="0.56,1.304" Click="ExitButton_Click_1"/>
+	</Grid>
+</Page>
