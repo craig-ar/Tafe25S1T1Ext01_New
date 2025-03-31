@@ -15,16 +15,16 @@
 				<TextBlock x:Name="titleTextBlock" FontSize="45" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,30">
 			Universal Calculator
 				</TextBlock>
-				<Button x:Name="mathsCalculatorButton" FontSize="20" HorizontalAlignment="Center" Width="300" Height="42">
+				<Button x:Name="mathsCalculatorButton" FontSize="20" HorizontalAlignment="Center" Width="300" Height="42" Click="mathsCalculatorButton_Click">
 					Maths Calculator
 				</Button>
 				<Button x:Name="morgageCalculatorButton" FontSize="20" HorizontalAlignment="Center" Width="300" Height="42" Click="morgageCalculatorButton_Click">
 					Morgage Calculator
 				</Button>
-				<Button x:Name="currencyConverterButton" FontSize="20" HorizontalAlignment="Center" Width="300" Height="42">
+				<Button x:Name="currencyConverterButton" FontSize="20" HorizontalAlignment="Center" Width="300" Height="42" Click="currencyConverterButton_Click">
 					Currency Converter
 				</Button>
-				<Button x:Name="exitButton" FontSize="20" HorizontalAlignment="Center" Width="300" Height="42">
+				<Button x:Name="exitButton" FontSize="20" HorizontalAlignment="Center" Width="300" Height="42" Click="exitButton_Click">
 					Exit
 				</Button>
 			</StackPanel>
